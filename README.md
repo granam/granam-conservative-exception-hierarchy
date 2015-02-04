@@ -1,7 +1,9 @@
-Philosophy of exception hierarchy is *you need to know*.
+Philosophy of exception hierarchy is kind of *you need to know*.
 
 It is important to know what happened. And it happens...
+
 The system fails. Something exceptionable occurs.
+
 Take extra care to get as much description of a problem as possible.
 
 The good way how to achieve that is keep exceptions hierarchy clean and clear.
