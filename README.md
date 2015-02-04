@@ -34,14 +34,14 @@ Your frontend application sends to API a request for new customer:
 
  - email: dontbotherme
 
-That is not valid email for sure. The frontend check fails and now you are forced to handle that failure.
+That is not valid email for sure. The frontend check failed and now you are forced to handle that failure.
 
 So lets throw some *Runtime* (like InvalidEmailFormat) exception somewhere inside your code.
 
-Your API of course should catch all Runtime exceptions and returns code 400 Bad Request (and the exception message).
+Your API of course should catch all Runtime exceptions and returns 400 Bad Request (and descriptive error message).
 
 In another case your application calculates price of an purchase, including discount coupon, volume discount, loyalty discount and... voala, the final price is negative!
 
-That is fatal error for sure fatal, originating inside your application. *Logic* exception (like FinalPriceZeroOrLesser) should be thrown.
+That is fatal error for sure, originating inside your application. *Logic* exception (like FinalPriceZeroOrLesser) should be thrown.
 
 The API of course catch that exception and turn it into response 500 Server error (and log that exception for asap fix!).
