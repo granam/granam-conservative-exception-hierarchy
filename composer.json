@@ -1,12 +1,13 @@
 {
-    "name": "granam/exception-hierarchy",
+    "name": "granam/conservative-exception-hierarchy",
     "type": "library",
     "description": "The hierarchy skeleton of exceptions in a project",
     "keywords": [
         "php",
         "exception",
-        "logic",
-        "runtime",
+        "conservative",
+        "logic exception",
+        "runtime exception",
         "hierarchy"
     ],
     "license": "MIT",

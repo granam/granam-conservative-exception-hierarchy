@@ -5,11 +5,11 @@ class RuntimeTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @test
-     * @expectedException \Granam\Exceptions\Runtime
+     * @expectedException \Granam\Exceptions\RuntimeException
      */
     public function can_be_thrown()
     {
-        throw new Runtime;
+        throw new RuntimeException;
     }
 
     /**
@@ -18,7 +18,7 @@ class RuntimeTest extends \PHPUnit_Framework_TestCase {
      */
     public function origins_at_standard_runtime_exception()
     {
-        throw new Runtime;
+        throw new RuntimeException;
     }
 
     /**
@@ -27,14 +27,14 @@ class RuntimeTest extends \PHPUnit_Framework_TestCase {
      */
     public function is_marked_by_local_interface()
     {
-        throw new Runtime;
+        throw new RuntimeException;
     }
 
 
     /** @test */
     public function is_not_logic()
     {
-        $runtime = new Runtime();
-        $this->assertFalse(is_a($runtime, '\Granam\Exceptions\Logic'));
+        $runtime = new RuntimeException();
+        $this->assertFalse(is_a($runtime, '\Granam\Exceptions\LogicException'));
     }
 }
