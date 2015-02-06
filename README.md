@@ -1,4 +1,8 @@
-Philosophy of exception hierarchy is kind of *you need to know*.
+###Origins
+This hierarchy is clone of granam/exceptions-hierarchy, just with conservative "Exception" suffixes, Runtime = RuntimeException and Logic = LogicException.
+
+
+_Philosophy of exception hierarchy is kind of *you need to know*._
 
 It is important to know what happened. And it happens...
 
